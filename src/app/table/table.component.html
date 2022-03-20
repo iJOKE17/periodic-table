@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="d-flex pb-1 justify-content-between" *ngFor="let row of atomics;">
+    <div class="atomic d-flex flex-column align-items-start align-content-center justify-content-center"
+      [ngClass]="{'atomic-hover': atomic.atomic }" *ngFor="let atomic of row;" [ngStyle]="{background:atomic.bgColor }">
+      <span class="atomic-number">{{ atomic.atomic }}</span>
+      <span [ngClass]="['atomic-symbol', 'state-' + atomic.state]">{{ atomic.symbol }}</span>
+      <span class="atomic-name">{{ atomic.name }}</span>
+      <span class="atomic-weight">{{ atomic.weight }}</span>
+    </div>
+  </div>
+  <br>
+  <div class="extend-row d-flex pb-1 justify-content-between" *ngFor="let row of atomicsExtend;">
+    <div class="atomic d-flex flex-column align-items-start align-content-center justify-content-center"
+      [ngClass]="{'atomic-hover': atomic.atomic }" *ngFor="let atomic of row;" [ngStyle]="{background:atomic.bgColor }">
+      <span class="atomic-number">{{ atomic.atomic }}</span>
+      <span [ngClass]="['atomic-symbol', 'state-' + atomic.state]">{{ atomic.symbol }}</span>
+      <span class="atomic-name">{{ atomic.name }}</span>
+      <span class="atomic-weight">{{ atomic.weight }}</span>
+    </div>
+  </div>
+</div>

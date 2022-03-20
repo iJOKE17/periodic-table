@@ -1,0 +1,46 @@
+.atomic {
+    height: 60px;
+    min-width: 60px; 
+    padding: 4px;
+    line-height: 11pt;
+
+    .state-solid {
+        color: black;
+    }
+
+    .state-liquid {
+        color: #000099;
+    }
+
+    .state-gas {
+        color: #990000;
+    }
+
+    .state-unknown {
+        color: gray;
+    }
+
+    .atomic-symbol {
+        font-size: 12pt;
+        font-weight: bold;
+    }
+
+    .atomic-number, .atomic-name, .atomic-weight {
+        font-size: 8pt;
+        text-align: left;
+        white-space: nowrap; 
+        width: 52px; 
+        overflow: hidden;
+    }
+}
+
+.atomic-hover:hover {
+    cursor: pointer;
+    outline: 2px solid skyblue;
+}
+
+.extend-row {
+    .atomic {
+        margin-left: 1px;
+    }
+}
